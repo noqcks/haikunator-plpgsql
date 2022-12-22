@@ -16,9 +16,7 @@ BEGIN
   END IF;
 
   -- Generate a random hex token of token_length
-  FOR i IN 1..token_length LOOP
-    token := token || token_chars[floor(random()*16)+1];
-  END LOOP;
+  SELECT random_string(token_length, token_chars) INTO token;
 
   raise notice 'Adjective %', adjective;
   raise notice 'Noun %', noun;
