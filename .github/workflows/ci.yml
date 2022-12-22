@@ -25,4 +25,4 @@ jobs:
         run: PGPASSWORD=tests psql -h postgres -p ${{ job.services.postgres.ports[5432] }} -U tests tests -c 'create extension pgtap;'
       - name: Run database tests
         working-directory: ./tests
-        run: PGPASSWORD=tests pg_prove --host postgres --dbname tests --username tests --verbose schema/*.sql functions/*/*.sql
+        run: PGPASSWORD=tests pg_prove --host postgres --dbname tests --username tests --verbose *.sql
