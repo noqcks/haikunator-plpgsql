@@ -16,7 +16,7 @@ BEGIN
 
   -- Generate a random hex token of token_length
   FOR i IN 1..token_length LOOP
-    token := token || token_chars[floor(random()*16)+1];
+    token := token || token_chars[floor(random()*length(token_chars))+1];
   END LOOP;
 
   adjective := adjectives[floor(random()*(array_length(adjectives, 1)))];
