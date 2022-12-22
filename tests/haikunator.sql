@@ -1,6 +1,6 @@
 -- Start transaction and plan tests
 BEGIN;
-SELECT plan(2);
+SELECT plan(3);
 
 -- Test case 1: Check that the function returns a non-null value
 SELECT ok(haikunate() IS NOT NULL, 'haikunate() returns a non-null value') AS "Test Result",
