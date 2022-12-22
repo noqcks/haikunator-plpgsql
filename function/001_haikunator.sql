@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION generate_random_name(token_length integer deafult 4, delimiter TEXT default '-', token_hex BOOLEAN default FALSE)
+CREATE OR REPLACE FUNCTION generate_random_name(token_length integer default 4, delimiter TEXT default '-', token_hex BOOLEAN default FALSE)
 RETURNS TEXT AS $$
 DECLARE
   adjectives TEXT[] := '{aged, ancient, autumn, billowing, bitter, black, blue, bold, broad, broken, calm, cold, cool, crimson, curly, damp, dark, dawn, delicate, divine, dry, empty, falling, fancy, flat, floral, fragrant, frosty, gentle, green, hidden, holy, icy, jolly, late, lingering, little, lively, long, lucky, misty, morning, muddy, mute, nameless, noisy, odd, old, orange, patient, plain, polished, proud, purple, quiet, rapid, raspy, red, restless, rough, round, royal, shiny, shrill, shy, silent, small, snowy, soft, solitary, sparkling, spring, square, steep, still, summer, super, sweet, throbbing, tight, tiny, twilight, wandering, weathered, white, wild, winter, wispy, withered, yellow, young}';
