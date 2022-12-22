@@ -21,7 +21,7 @@ BEGIN
 
   adjective := adjectives[floor(random()*(array_length(adjectives, 1)))];
   noun := nouns[floor(random()*(array_length(nouns, 1)))];
-
+  raise notice 'Token Chars %', token_chars;
   raise notice 'Adjective %', adjective;
   raise notice 'Noun %', noun;
   raise notice 'Token %', token;
