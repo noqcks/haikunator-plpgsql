@@ -26,7 +26,7 @@ SELECT ok(regexp_matches(haikunate(8), '^[a-zA-Z]+-[a-zA-Z]+-[a-zA-Z0-9]{8}$') I
        'haikunate() returns a string with the correct length when token_length is specified' AS "Test Description";
 
 -- Test case 6: Check that the delimiter is correct when specified
-SELECT ok(regexp_matches(haikunate(4, "_"), '^[a-zA-Z]+_[a-zA-Z]+_[a-zA-Z0-9]{4}$') IS NOT NULL,
+SELECT ok(regexp_matches(haikunate(4, '_'), '^[a-zA-Z]+_[a-zA-Z]+_[a-zA-Z0-9]{4}$') IS NOT NULL,
          'haikunate() returns the correct delimineter when a delimiter is specified') AS "Test Result",
        'haikunate() returns the correct delimineter when a delimiter is specified' AS "Test Description";
 
