@@ -8,6 +8,7 @@ DECLARE
   adjective TEXT := adjectives[floor(random()*(array_length(adjectives, 1)))];
   noun TEXT := nouns[floor(random()*(array_length(nouns, 1)))];
   token TEXT := '';
+  gen_name TEXT := '';
 BEGIN
   if token_hex THEN
     token_chars := string_to_array('0123456789abcdef', '');
@@ -19,6 +20,8 @@ BEGIN
   FOR i IN 1..token_length LOOP
     token := token || token_chars[floor(random()*16)+1];
   END LOOP;
+  gen_name = adjective || '-' || noun || '-' || token;
+  raise notice 'Value %', gen_name;
 
   RETURN adjective || '-' || noun || '-' || token;
 END;
