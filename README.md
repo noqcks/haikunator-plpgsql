@@ -10,6 +10,8 @@ You can find the function at `function/001_haikunator.sql`.
 haikunate(token_length integer default 4, delimiter TEXT default '-', token_hex BOOLEAN default FALSE)
 ```
 
+Examples
+
 ```sql
 SELECT haikunate(); -- => "aged-band-1234"
 SELECT haikunate(4, "-", false); -- => "blue-breeze-1234"
