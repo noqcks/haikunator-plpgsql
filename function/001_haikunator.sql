@@ -23,6 +23,11 @@ BEGIN
   gen_name = adjective || '-' || noun || '-' || token;
   raise notice 'Value %', gen_name;
 
+  raise notice 'Adjective %', adjective;
+  raise notice 'Noun %', noun;
+  raise notice 'Token %', token;
+
+
   RETURN adjective || '-' || noun || '-' || token;
 END;
 $$ LANGUAGE plpgsql;
