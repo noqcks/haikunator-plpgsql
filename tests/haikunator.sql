@@ -1,6 +1,6 @@
 -- Start transaction and plan tests
 BEGIN;
-SELECT plan(4);
+SELECT plan(2);
 
 -- Test case 1: Check that the function returns a non-null value
 SELECT ok(generate_random_name() IS NOT NULL, 'generate_random_name() returns a non-null value') AS "Test Result",
