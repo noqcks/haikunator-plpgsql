@@ -1,5 +1,7 @@
 # haikunator-plpgsql
 
+![ci](https://github.com/noqcks/haikunator-plpgsql/actions/workflows/ci.yml/badge.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 Generate Heroku-like random names in PL/pgSQL. Inspired by [usmanbashir/haikunator](https://github.com/usmanbashir/haikunator)
 
 ## Usage
