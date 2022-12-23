@@ -1,6 +1,6 @@
 # haikunator-plpgsql
 
-Generate Heroku-like random names with a postgresql function. Inspired by [usmanbashir/haikunator](https://github.com/usmanbashir/haikunator)
+Generate Heroku-like random names in PL/pgSQL. Inspired by [usmanbashir/haikunator](https://github.com/usmanbashir/haikunator)
 
 ## Usage
 
